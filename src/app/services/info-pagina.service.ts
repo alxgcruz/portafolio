@@ -25,7 +25,7 @@ export class InfoPaginaService {
   }
 
   private cargarEquipo() {
-    this.http.get('https://portafolio-ce1fe.firebaseio.com/equipo')
+    this.http.get('https://portafolio-ce1fe.firebaseio.com/equipo.json')
     .subscribe( (resp: any) => {
       this.equipo = resp;
     } );
